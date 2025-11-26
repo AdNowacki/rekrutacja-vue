@@ -1,7 +1,7 @@
 <template>
-  <div class="container overflow-auto px-8 max-w-3xl mx-auto">
-    <div class="sticky top-0">
-      <h1 class="">Komentarze</h1>
-    </div>
-  </div>
+  <main class="container overflow-auto px-8 max-w-3xl mx-auto">
+    <header class="sticky top-0">
+      <h1>Komentarze</h1>
+    </header>
+  </main>
 </template>
