@@ -2,7 +2,7 @@
 
 ### Twoim zadaniem jest wdrożenie systemu **reakcji (emoji reactions)** do komentarzy.
 
-## Zakres zadania
+## ✅ Zakres zadania
 
 ### 1. Załaduj komentarze z pliku:
 
