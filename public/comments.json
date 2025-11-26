@@ -1,0 +1,100 @@
+[
+  {
+    "id": 1,
+    "author": "Anna",
+    "content": "Świetny pomysł z tym rozwiązaniem – prosty i czytelny!",
+    "created_at": "2025-11-23T12:30:00Z",
+    "reactions": {
+      "❤️": 3,
+      "😂": 1,
+      "👍": 4,
+      "😮": 0,
+      "👎": 0
+    },
+    "user_reaction": null
+  },
+  {
+    "id": 2,
+    "author": "Piotr",
+    "content": "Ja bym jeszcze dodał paginację do tej listy.",
+    "created_at": "2025-11-23T12:31:00Z",
+    "reactions": {
+      "❤️": 1,
+      "😂": 0,
+      "👍": 2,
+      "😮": 1,
+      "👎": 0
+    },
+    "user_reaction": null
+  },
+  {
+    "id": 3,
+    "author": "Ola",
+    "content": "Czy testowaliście to na mobile? U mnie lekko się rozjeżdża UI.",
+    "created_at": "2025-11-23T12:32:00Z",
+    "reactions": {
+      "❤️": 0,
+      "😂": 0,
+      "👍": 2,
+      "😮": 0,
+      "👎": 1
+    },
+    "user_reaction": null
+  },
+  {
+    "id": 4,
+    "author": "Michał",
+    "content": "U mnie działa.. Może zależy od przeglądarki?",
+    "created_at": "2025-11-22T23:33:00Z",
+    "reactions": {
+      "❤️": 1,
+      "😂": 2,
+      "👍": 1,
+      "😮": 1,
+      "👎": 0
+    },
+    "user_reaction": null
+  },
+  {
+    "id": 5,
+    "author": "Anna",
+    "content": "Dobra uwaga – sprawdzę i poprawię stylowanie na małych ekranach.",
+    "created_at": "2025-11-23T20:34:00Z",
+    "reactions": {
+      "❤️": 2,
+      "😂": 0,
+      "👍": 2,
+      "😮": 0,
+      "👎": 0
+    },
+    "user_reaction": null
+  },
+  {
+    "id": 6,
+    "author": "Piotr",
+    "content": "Ktoś z was miał problem z endpointem /comments? U mnie 500.",
+    "created_at": "2025-11-21T12:35:00Z",
+    "reactions": {
+      "❤️": 4,
+      "😂": 0,
+      "👍": 3,
+      "😮": 1,
+      "👎": 0
+    },
+    "user_reaction": null
+  },
+  {
+    "id": 7,
+    "author": "Ola",
+    "content": "Było chwilowe przeciążenie. Teraz już powinno działać.",
+    "created_at": "2025-11-21T12:36:00Z",
+    "reactions": {
+      "❤️": 1,
+      "😂": 0,
+      "👍": 2,
+      "😮": 0,
+      "👎": 0
+    },
+    "user_reaction": null
+  }
+]
