@@ -1,33 +1,53 @@
+# 📝 Zadanie Rekrutacyjne – Reakcje do Komentarzy
 
-=====================================================
-                ZADANIE REKRUTACYJNE 
-=====================================================
+### Twoim zadaniem jest wdrożenie systemu **reakcji (emoji reactions)** do komentarzy.
 
-Twoim zadaniem jest wdrożenie systemu REAKCJI
-do komentarzy (emoji reactions).
+## Zakres zadania
 
-1. Załaduj komentarzy z pliku:
-   * /public/comments.json
+### 1. Załaduj komentarze z pliku:
 
-2. Wyświetl listę komentarzy (autor, tekst, data) oraz umieść info o całkowitej liczbie komentarzy w nagłówku.
-   * Dla formatowania daty użyj funkcji formatDate/useHelpers
+- `/public/comments.json`
 
-3. Dodaj logikę odpowiedzialną za reakcje.
-   * Dostępne reakcje to:  ["❤️", "😂", "👍", "😮", "👎"]
-  
+### 2. Wyświetl listę komentarzy:
 
-4. Obsłuż pełną logikę reakcji:
-   - Kliknięcie reakcji dodaje reakcję użytkownika
-   - Kliknięcie tej samej reakcji ponownie → usuwa ją
-   - Kliknięcie innej reakcji → podmienia reakcję
-   - Liczniki reakcji muszą się aktualizować poprawnie
+- Autor
+- Tekst
+- Data (sformatowana za pomocą `formatDate` / `useHelpers`)
+- W nagłówku umieść informację o **całkowitej liczbie komentarzy**
 
-5. Podświetl reakcję wybraną przez użytkownika.
-   * Powinna być maksymalnie 1 per komentarz	
+### 3. Dodaj logikę dla reakcji:
 
-6. Tailwind – proste stylowanie wystarczy. UI nie musi być idealne, tylko czytelne.
+Dostępne reakcje:
 
+["❤️", "😂", "👍", "😮", "👎"]
 
-⭐️ GŁÓWNY CEL: poprawna implementacja logiki reakcji + czytelna architektura.
-⏱️ Czas na wykonanie zadania: 45 minut
-🥋 BONUS: Dodać sortowanie wg. popularności/daty dodania.
+## ⚙️ Wymagana logika reakcji
+
+- Kliknięcie reakcji **dodaje** reakcję użytkownika
+- Kliknięcie **tej samej reakcji ponownie** → usuwa ją
+- Kliknięcie **innej reakcji** → zamienia reakcję na nową
+- Liczniki reakcji muszą być zawsze aktualne i poprawne
+- Podświetl reakcję wybraną przez użytkownika  
+  (1 reakcja per komentarz)
+
+## 🎨 Stylowanie
+
+- Użyj **Tailwind CSS**
+- UI nie musi być idealne — ma być **czytelne**
+
+## ⭐ Główny Cel
+
+Poprawna, czysta i czytelna implementacja **logiki reakcji** oraz architektury.
+
+## ⏱️ Limit czasu
+
+**45 minut**
+
+## 🥋 Bonus (opcjonalnie)
+
+Dodaj sortowanie komentarzy według:
+
+- popularności (liczby reakcji)
+- daty dodania
+
+Powodzenia! 🚀
