@@ -54,7 +54,7 @@ Dostępne reakcje:
 
 ## ⭐ Główny Cel
 
-Stworzenie poprawnej, czystej i czytelnej implementacji **logiki reakcji** oraz architektury (Vue + state).
+Stworzenie poprawnej, czystej i czytelnej implementacji **logiki reakcji** oraz architektury.
 
 ## ⏱️ Limit czasu
 
