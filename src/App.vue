@@ -13,7 +13,6 @@ import { fetchComments } from './utils'
 
 import Comments from './components/Comments.vue';
 
-const emoji = ["❤️", "😂", "👍", "😮", "👎"];
 const process = ref(false);
 const comments = ref([]);
 
