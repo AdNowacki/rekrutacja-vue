@@ -3,5 +3,10 @@
     <header class="sticky top-0">
       <h1>Komentarze</h1>
     </header>
+    <Comments />
   </main>
 </template>
+
+<script setup>
+import Comments from './components/Comments.vue';
+</script>
