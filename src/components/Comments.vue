@@ -4,4 +4,5 @@
     </div>
 </template>
 <script setup>
+const emoji = ["❤️", "😂", "👍", "😮", "👎"];
 </script>
