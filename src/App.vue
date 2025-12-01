@@ -1,7 +1,7 @@
 <template>
   <main class="container overflow-auto px-8 max-w-3xl mx-auto">
     <header class="sticky top-0">
-      <h1>Komentarze</h1>
+      <h1 class="text-xl">Komentarze</h1>
     </header>
     <Comments :comments="comments" />
   </main>
