@@ -3,7 +3,9 @@
         <div>{{ comment.author }}</div>
         <div>{{ comment.content }}</div>
         <div>Data: {{ formatDate(comment.created_at) }}</div>
-        <Reaction class="mt-3" />
+        <!-- <span v-for="(c, r) in  comment.reactions">{{ r }} {{ c }}</span> -->
+
+        <Reaction @click="clickHandler" class="mt-3" :comment="comment" />
     </div>
 </template>
 
@@ -20,4 +22,8 @@ const props = defineProps({
     }
 });
 const { formatDate } = useHelpers();
+
+const clickHandler = (reaction) => {
+    console.log(reaction);
+}
 </script>
