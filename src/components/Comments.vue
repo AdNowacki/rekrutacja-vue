@@ -6,22 +6,12 @@
     </div>
 </template>
 <script setup>
-import { ref } from 'vue';
-import { fetchComments } from '../utils'
-const emoji = ["❤️", "😂", "👍", "😮", "👎"];
-const process = ref(false);
-const comments = ref([]);
+import { defineProps } from 'vue';
 
-const loadData = async () => {
-    try {
-        process.value = true;
-        comments.value = await fetchComments();
-    } catch (error) {
-        console.error(error);
-    } finally {
-        process.value = false;
+const props = defineProps({
+    comments: {
+        type: Array,
+        default: () => []
     }
-}
-
-loadData();
+})
 </script>
