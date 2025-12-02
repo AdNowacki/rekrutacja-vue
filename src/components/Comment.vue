@@ -3,8 +3,6 @@
         <div>{{ comment.author }}</div>
         <div>{{ comment.content }}</div>
         <div>Data: {{ formatDate(comment.created_at) }}</div>
-        <!-- <span v-for="(c, r) in  comment.reactions">{{ r }} {{ c }}</span> -->
-
         <Reaction @click="clickHandler" class="mt-3" :comment="comment" />
     </div>
 </template>
