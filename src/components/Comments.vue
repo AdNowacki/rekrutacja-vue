@@ -1,14 +1,15 @@
 <template>
     <div>
-        <h2>{{ commentsCount }}</h2>
-        <div v-for="comment in comments" :key="comment.id" class="border p-4 my-2">
+        <div v-for="comment in comments" :key="comment.id" class="p-4 my-3 rounded-2xl shadow-sm border-gray-300 border">
             <Comment :comment="comment" />
+            <Reactions @click="reactionClickHandler" class="mt-3" :reactions="comment.reactions" />
         </div>
     </div>
 </template>
 <script setup>
 import { defineProps, computed } from 'vue';
 import Comment from './Comment.vue'
+import Reactions from './Reactions.vue';
 
 const props = defineProps({
     comments: {
@@ -17,5 +18,8 @@ const props = defineProps({
     }
 });
 
-const commentsCount = computed(() => `Liczba wszystkich komentarzy to: ${props.comments.length}`)
+const reactionClickHandler = (reaction) => {
+    // @TODO add handler when needed
+    console.log(reaction);
+}
 </script>

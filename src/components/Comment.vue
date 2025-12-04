@@ -1,17 +1,11 @@
 <template>
-    <div>
-        <div>{{ comment.author }}</div>
-        <div>{{ comment.content }}</div>
-        <div>Data: {{ formatDate(comment.created_at) }}</div>
-        <Reaction @click="clickHandler" class="mt-3" :comment="comment" />
-    </div>
+    <div>{{ comment.content }}</div>
+    <div class="text-xs mt-2 pt-1 border-t-gray-300 border-t w-fit">{{ signature }}</div>
 </template>
 
 <script setup>
-import { defineProps } from 'vue';
-import { useHelpers } from '@/composables/useHelpers';
-
-import Reaction from './Reaction.vue';
+import { computed, defineProps } from 'vue';
+import { formatDate } from '@/utils';
 
 const props = defineProps({
     comment: {
@@ -19,9 +13,8 @@ const props = defineProps({
         default: () => ({})
     }
 });
-const { formatDate } = useHelpers();
 
-const clickHandler = (reaction) => {
-    console.log(reaction);
-}
+const signature = computed(() => {
+    return `${props.comment.author} | ${formatDate(props.comment.created_at)}`;
+});
 </script>
